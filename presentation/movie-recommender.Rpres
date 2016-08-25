@@ -1,0 +1,44 @@
+Movie Recommender
+========================================================
+## It's Movie Recommendations Made Easy  
+
+
+What It Does?
+========================================================
+
+Drawing on a database of close to 500,000 reviews, **Movie Recommender** provides the best movie recommendations in seconds. 
+
+
+Who's It For?
+========================================================
+
+**Movie Recommender** helps a variety of people:
+
+- People who love watching movies but are plagued with indecision
+- People who want to try something new
+- Movie buffs with strong tastes in movies
+
+
+How Does it Work?
+========================================================
+
+Using a proprietary algorithm, **Movie Recommender** scores over 800 movies using about 500,000 MovieLens reviews.
+
+```{r, message=FALSE, echo=FALSE}
+library(dplyr)
+library(ggplot2) 
+plot.data <- read.csv('plot.data.csv')
+ggplot(plot.data, aes(x=avg.rating, y=reviews, alpha=0.5)) + geom_point() + ggtitle('Average Ratings of Movies (On a 1-5 Scale)') + xlab('Rating') + ylab('Number of Reviews') + theme(legend.position='none')
+```
+
+What Else Can it Do?
+========================================================
+
+**Movie Recommender** also:
+
+- Allows users to rate up to three films they have seen and customizes the recommendation
+- Allows users to filter results by genre
+- Displays a visualization of the data
+
+## **Movie Recommender** 
+## It's Movie Recommendations Made Easy
